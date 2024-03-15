@@ -5,7 +5,7 @@ The script 'VRS-on-Stratux.sh' will install on Stratux nearly everything needed 
 
 Installation includes mono, virtual radar server, webadmin plugin, tileservercache plugin, silhouettes, operator flags, custom python GDL90 to SBS converter to make all Stratux output available to VRS, OpenStreet maps to zoom level 13 for both Stratux and VRS, custom built comprehensive database with all US and Canadian aircraft and many international aircraft.
 
-The python program connects to Stratux's UDP port 4000 and translates the data into SBS format.  It makes those data available on TCP port 33333.  If you are outside the US, you don't need the python program since the 1090 data are available on port 30003 of Stratux, but it doesn't cause any issues running the python program in the absence of UAT data.  However, since I only include a US OpenStreet map, you will need to assemble your own map for offline use if you're outside the US.
+The custom python program connects to Stratux's UDP port 4000 and translates the data into SBS format.  It makes those data available on TCP port 33333.  If you are outside the US, you don't need the python program since the 1090 data are available on port 30003 of Stratux, but it doesn't cause any issues running the python program in the absence of UAT data.  However, since I only include a US OpenStreet map, you will need to assemble your own map for offline use if you're outside the US.
 
 If you enable the "Show Traffic Source in Callsign" option in Stratux's setting, the python program will filter out all non-ADS-B traffic and only pass along UAT traffic on port 33333.  Thus, the "UAT" receiver in VRS can be selected to view only UAT traffic.
 
