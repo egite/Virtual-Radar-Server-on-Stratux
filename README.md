@@ -26,7 +26,7 @@ It will take some time to download all the necessary files and packages.  When i
   - https://drive.google.com/uc?export=download&id=1amNCk3fMYv3X-eZ1AwDRvVp1PHyDuaL2
   - 'scp' it to the Stratux into the following folder:  '/home/pi/VRS_Files/'
 
-- Download the 112 MB full aircraft database for VRS from the following link.
+- Download the 112 MB full aircraft custom database for VRS from the following link.
   - https://drive.google.com/uc?export=download&id=15ilLDsOfxqI4CL51PqMtsb5sHYRc8D_e
   - 'scp' it to the Stratux into the following folder:  '/home/pi/.local/share/VirtualRadar'
 
