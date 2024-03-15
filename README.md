@@ -1,5 +1,5 @@
 # Virtual-Radar-Server-on-Stratux
-Installs and runs Virtual Radar Server on Stratux with offline maps and complete aircraft database
+Installs and runs Virtual Radar Server on Stratux with offline maps and complete aircraft database.
 
 The script 'VRS-on-Stratux.sh' will install on Stratux nearly everything needed to run Virtual Radar Server in offline mode (since we don't have internet in the sky) so you get a complete map of the US and full database of all US, Canadian and many international aircraft with proper silhouettes and operator flags.  
 
