@@ -35,7 +35,7 @@ It will take some time to download all the necessary files and packages.  When i
   - 'scp' it to the Stratux into the following folder:  ~pi/.local/share/VirtualRadar/TileServerCache/Leaflet'
   - Then unpack and delete it with 'tar -zxvf maps.tar.gz ; rm maps.tar.gz'.
 
-- If you want Stratux to have offline VFR charts (which are not current) and offline OpenStreet maps:
+- If you want Stratux to have offline OpenStreet maps and offline VFR charts (which may not be current):
   - Download this 6.2 GB mbtiles file from a browser onto a computer:
     - https://drive.google.com/uc?export=download&id=1uZAqCMZ-VXjqeqTNygL-WyMSZd_J8KtG
     - On the Stratux, cd into '/overlay/robase/opt/stratux/mapdata' and execute 'sudo overlayctl unlock'.
@@ -43,7 +43,7 @@ It will take some time to download all the necessary files and packages.  When i
     - 'mv ~pi/OpenStreet.mbtiles /overlay/robase/opt/stratux/mapdata'
   - On the Stratux, in the same folder, execute 'wget -N https://abatzill.de/stratux/vfrsec.mbtiles' to get the ~700 MB VFR charts.
     - Then execute 'sudo systemctl restart stratux'.
-    - Verify that the VFR charts and offline OpenStreet maps are available in Stratux's 'Map' web page.
+  - Verify that the VFR charts and offline OpenStreet maps are available in Stratux's 'Map' web page.
 
 After completing those steps, reboot your Stratux.  It may take a couple of minutes for VRS to start up.  You can check processes with 'ps -eaf|grep mono'.
 When VRS starts, go to Stratux's main status page.  You should see links for VRS at the bottom.
