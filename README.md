@@ -7,7 +7,7 @@ Installation includes mono, virtual radar server, webadmin plugin, tileservercac
 
 The custom python program connects to Stratux's UDP port 4000 and translates the data into SBS format.  It makes those data available on TCP port 33333.  If you are outside the US, you don't need the python program since the 1090 data are available on port 30003 of Stratux, but it doesn't cause any issues running the python program in the absence of UAT data.  However, since I only include a US OpenStreet map, you will need to assemble your own map for offline use if you're outside the US.
 
-If you enable the "Show Traffic Source in Callsign" option in Stratux's setting, the python program will filter out all non-ADS-B traffic and only pass along UAT traffic on port 33333.  Thus, the "UAT" receiver in VRS can be selected to view only UAT traffic.
+If you enable the "Show Traffic Source in Callsign" option in Stratux's settings, the python program will filter out all non-ADS-B traffic and only pass along UAT traffic on port 33333.  Thus, the "UAT" receiver in VRS can be selected to view only UAT traffic.
 
 Installation:
 - I suggest a 64 GB minimum size sdcard, though you can fit everything on 32 GB is you're strategic about it.
