@@ -20,7 +20,7 @@ Installation:
 - run:  chmod 755 VRS-on-Stratux
 - run:  ./VRS-on-Stratux.sh
   
-It will take some time to download all the necessary files and packages.  When it's done, you'll need to download several large files from Google Drive that don't have direct links because they're too large so you'll need to download them from a browser on a computer then use 'scp' to copy from that computer to the Pi.
+It will take some time to download all the necessary files and packages.  When it's done, you'll need to download several large files from Google Drive. These files don't have direct links because of their size, so you'll need to download them from a browser on a computer then use 'scp' to copy from that computer to the Pi.
 
 - Download the 204 MB BaseStation.sqb database from the following link.
   - https://drive.google.com/uc?export=download&id=1amNCk3fMYv3X-eZ1AwDRvVp1PHyDuaL2
