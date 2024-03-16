@@ -3,11 +3,11 @@ Installs and runs Virtual Radar Server on Stratux with offline maps and complete
 
 The script 'VRS-on-Stratux.sh' will install on Stratux nearly everything needed to run Virtual Radar Server in offline mode (since we don't have internet in the sky) so you get a complete map of the US and full database of all US, Canadian and many international aircraft with proper silhouettes and operator flags.  
 
-Installation includes mono, virtual radar server, webadmin plugin, tileservercache plugin, silhouettes, operator flags, custom python GDL90 to SBS converter to make all Stratux output available to VRS, OpenStreet maps to zoom level 13 for both Stratux and VRS, custom built comprehensive database with all US and Canadian aircraft and many international aircraft.
+Installation includes mono, Virtual Radar Server, webadmin plugin, tileservercache plugin, silhouettes, operator flags, custom python GDL90 to SBS converter to make all Stratux output available to VRS, OpenStreet maps to zoom level 13 for both Stratux and VRS, and custom built comprehensive database with all US and Canadian aircraft and many international aircraft.
 
-The custom python program connects to Stratux's UDP port 4000 and translates the data into SBS format.  It makes those data available on TCP port 33333.  If you are outside the US, you don't need the python program since the 1090 data are available on port 30003 of Stratux, but it doesn't cause any issues running the python program in the absence of UAT data.  However, since I only include a US OpenStreet map, you will need to assemble your own map for offline use if you're outside the US.
+The custom python program I wrote connects to Stratux's UDP port 4000 and translates the data into SBS format.  It makes those data available on TCP port 33333, which VRS then connects to.  If you are outside the US, you don't need the python program since the 1090 data are available on port 30003 of Stratux, but it doesn't cause any issues running the python program in the absence of UAT data.  However, since I only include a US OpenStreet map, you will need to assemble your own map for offline use if you're outside the US.
 
-If you enable the "Show Traffic Source in Callsign" option in Stratux's settings, the python program will filter out all non-ADS-B traffic and only pass along UAT traffic on port 33333.  Thus, the "UAT" receiver in VRS can be selected to view only UAT traffic.
+If you enable the "Show Traffic Source in Callsign" option in Stratux's settings, the python program will filter out all non-ADS-B traffic and only pass along UAT traffic on port 33333.  Thus, the "UAT" receiver in VRS can be selected to view only UAT traffic and the "ADS-B" receiver can be used to see just ADS-B traffic from the 1090 receiver on port 30003.  The default is to use the "Merged Feed" of both receivers (port 30003 from dump1090 and the GDL90-translated-to-SCS data on port 33333).
 
 Installation:
 - I suggest a 32 GB minimum size sdcard, though you can fit everything on 16 GB if you're strategic about it.
@@ -35,7 +35,7 @@ It will take some time to download all the necessary files and packages.  When i
   - 'scp' it to the Stratux into the following folder:  ~pi/.local/share/VirtualRadar/TileServerCache/Leaflet'
   - Then unpack and delete it with 'tar -zxvf maps.tar.gz ; rm maps.tar.gz'.
 
-- If you want Stratux to have offline OpenStreet maps and offline VFR charts (which may not be current):
+- In addition to VRS' offline OpenStreet maps, if you also want Stratux's maps to have offline OpenStreet maps and offline VFR charts (which may not be current):
   - Download this 6.2 GB mbtiles file from a browser onto a computer:
     - https://drive.google.com/uc?export=download&id=1uZAqCMZ-VXjqeqTNygL-WyMSZd_J8KtG
     - On the Stratux, cd into '/overlay/robase/opt/stratux/mapdata' and execute 'sudo overlayctl unlock'.
