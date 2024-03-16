@@ -10,7 +10,7 @@ The custom python program connects to Stratux's UDP port 4000 and translates the
 If you enable the "Show Traffic Source in Callsign" option in Stratux's settings, the python program will filter out all non-ADS-B traffic and only pass along UAT traffic on port 33333.  Thus, the "UAT" receiver in VRS can be selected to view only UAT traffic.
 
 Installation:
-- I suggest a 64 GB minimum size sdcard, though you can fit everything on 32 GB if you're strategic about it.
+- I suggest a 32 GB minimum size sdcard, though you can fit everything on 16 GB if you're strategic about it.
 - Connect your Stratux to the internet.
 - Connect to your Stratux's settings page and add '127.0.0.1' in the "Static IPs" list.  Do not skip this step, or you won't see UAT traffic in VRS.
 - Enable developer mode then reboot.
