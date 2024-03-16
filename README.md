@@ -55,5 +55,5 @@ The username and password for VRS' administration page is indicated in parenthes
 Be sure to always include '127.0.0.1' on the list of Stratux static IPs in Stratux's 'Settings' page.
 
 When you have confirmed VRS is functioning properly, turn off persistent logging in Stratux's settings and reboot.
-If you later want to make configuration changes top VRS, you'll need to reenable persistent logging, reboot, make changes in VRS then disable persistant logging and reboot.  Keeping persistent logging on risks a corrupted sdcard if you shut off the Stratux without shutting it down through the webpage.
+If you later want to make configuration changes to VRS, you'll need to first reenable persistent logging, reboot, make changes in VRS then disable persistant logging when you're done then reboot.  Keeping persistent logging on risks a corrupted sdcard if you shut off the Stratux without shutting it down through the webpage.
 
