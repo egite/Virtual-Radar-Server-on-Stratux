@@ -34,7 +34,7 @@ It will take some time to download all the necessary files and packages.  When i
   - https://drive.google.com/uc?export=download&id=1tI5hb0I66zj0kR8RaK4BOru31R1Cqaua
   - 'scp' it to the Stratux into the following folder:  ~pi/.local/share/VirtualRadar/TileServerCache/Leaflet'
   - Then unpack and delete it with 'tar -zxvf maps.tar.gz ; rm maps.tar.gz'.
-- Optional:  In addition to VRS' offline OpenStreet maps, if you also want Stratux's maps to have offline OpenStreet maps and offline VFR charts (which may not be current):
+- <em>Optional</em>:  In addition to VRS' offline OpenStreet maps, if you also want <em>Stratux's</em> maps (not just VRS') to have offline OpenStreet maps and offline VFR charts (which may not be current):
   - Download this 6.2 GB mbtiles file from a browser onto a computer:
     - https://drive.google.com/uc?export=download&id=1uZAqCMZ-VXjqeqTNygL-WyMSZd_J8KtG
     - On the Stratux, cd into '/overlay/robase/opt/stratux/mapdata' and execute 'sudo overlayctl unlock'.
