@@ -3,17 +3,19 @@ Installs and runs Virtual Radar Server on Stratux with offline maps and complete
 
 The script 'VRS-on-Stratux.sh' will install on Stratux nearly everything needed to run Virtual Radar Server in offline mode (since we don't have internet in the sky) so you get a complete map of the US and full database of all US, Canadian and many international aircraft with proper silhouettes and operator flags.  
 
-Installation includes:
+Installation includes (nearly all are automatic):
 - mono
 - Virtual Radar Server
   - webadmin plugin
   - tileservercache plugin
+  - preconfigured config files for zero required setup
 - Silhouettes
 - Operator flags
 - 'imagemagick' (to use 'mogrify' to reformat bitmaps to compatible format for VRS)
 - Custom python GDL90 to SBS converter to make all Stratux output available to VRS
 - OpenStreet maps to zoom level 13 for VRS (and optionally for Stratux's map)
 - Custom built comprehensive database with all US and Canadian aircraft and many international aircraft
+- Manual download of maps and databases.
 
 The custom python program I wrote connects to Stratux's UDP port 4000 and translates the data into SBS format.  It makes those data available on TCP port 33333, which VRS then connects to.  If you are outside the US, you don't need the python program since the 1090 data are available on port 30003 of Stratux, but it doesn't cause any issues running the python program in the absence of UAT data.  However, since I only include a US OpenStreet map, you will need to assemble your own map for offline use if you're outside the US.
 
