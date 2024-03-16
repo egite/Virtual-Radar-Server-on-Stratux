@@ -43,7 +43,7 @@ It will take some time to download all the necessary files and packages.  When i
     - 'scp' the OpenStreet.mbtiles you downloaded onto the Stratux into ~pi/ then:
     - 'mv ~pi/OpenStreet.mbtiles /overlay/robase/opt/stratux/mapdata'
   - On the Stratux, in the same folder, execute 'wget -N https://abatzill.de/stratux/vfrsec.mbtiles' to get the ~700 MB VFR charts.
-    - Then execute 'sudo systemctl restart stratux'.
+  - Then execute 'sudo systemctl restart stratux'.
   - Verify that the VFR charts and offline OpenStreet maps are available in Stratux's 'Map' web page.
 
 After completing those steps, reboot your Stratux.  It may take a couple of minutes for VRS to start up.  You can check processes with 'ps -eaf|grep mono'.
