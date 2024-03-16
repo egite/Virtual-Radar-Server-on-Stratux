@@ -16,7 +16,7 @@ Installation:
   - Do not skip this step, or you won't see UAT traffic in VRS.
 - Enable developer mode then reboot.
 - Enable persistent logging then reboot.
-- ssh into the Stratux (defaults are pi/raspberry)
+- ssh into the Stratux (defaults are pi/raspberry).
 - run:  sudo wget -N https://github.com/egite/Virtual-Radar-Server-on-Stratux/releases/download/v1.0/VRS-on-Stratux.sh
 - run:  chmod 755 VRS-on-Stratux.sh
 - run:  ./VRS-on-Stratux.sh
