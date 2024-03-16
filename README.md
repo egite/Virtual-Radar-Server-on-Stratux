@@ -17,9 +17,10 @@ Installation:
 - Enable developer mode then reboot.
 - Enable persistent logging then reboot.
 - ssh into the Stratux (defaults are pi/raspberry).
-- run:  sudo wget -N https://github.com/egite/Virtual-Radar-Server-on-Stratux/releases/download/v1.0/VRS-on-Stratux.sh
-- run:  chmod 755 VRS-on-Stratux.sh
-- run:  ./VRS-on-Stratux.sh
+- Run the following from the command line:
+  - sudo wget -N https://github.com/egite/Virtual-Radar-Server-on-Stratux/releases/download/v1.0/VRS-on-Stratux.sh
+  - chmod 755 VRS-on-Stratux.sh
+  - ./VRS-on-Stratux.sh
   
 It will take some time to download all the necessary files and packages.  When it's done, you'll need to download several large files from Google Drive. These files don't have direct links because of their size, so you'll need to download them from a browser on a computer then use 'scp' to copy from that computer to the Pi.
 
