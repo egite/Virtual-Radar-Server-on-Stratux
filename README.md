@@ -44,8 +44,8 @@ It will take some time to download all the necessary files and packages.  When i
   - Then execute 'sudo systemctl restart stratux'.
   - Verify that the VFR charts and offline OpenStreet maps are available in Stratux's 'Map' web page.
 
-After completing those steps, reboot your Stratux.  It may take a couple of minutes for VRS to start up.  You can check processes with 'ps -eaf|grep mono'.
-When VRS starts, go to Stratux's main status page.  You should see links for VRS at the bottom.
+After completing those steps, reboot your Stratux.  It may take a couple of minutes for VRS to start up.  You can check for the VRS process with 'ps -eaf|grep mono'.
+After VRS starts, go to Stratux's main status page.  You should see links for VRS at the bottom.  It may take 10-20 seconds for VRS to serve the page (longer if VRS isn't yet running).
 The VRS icon will take you to VRS only when you are connected to Stratux via its wifi link, otherwise,
 use the text links.
 
