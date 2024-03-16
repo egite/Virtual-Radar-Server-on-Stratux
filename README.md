@@ -12,7 +12,8 @@ If you enable the "Show Traffic Source in Callsign" option in Stratux's settings
 Installation:
 - I suggest a 32 GB minimum size sdcard, though you can fit everything on 16 GB if you're strategic about it.
 - Connect your Stratux to the internet.
-- Connect to your Stratux's settings page and add '127.0.0.1' in the "Static IPs" list.  Do not skip this step, or you won't see UAT traffic in VRS.
+- Connect to your Stratux's settings page and add '127.0.0.1' in the "Static IPs" list.
+  - Do not skip this step, or you won't see UAT traffic in VRS.
 - Enable developer mode then reboot.
 - Enable persistent logging then reboot.
 - ssh into the Stratux (defaults are pi/raspberry)
