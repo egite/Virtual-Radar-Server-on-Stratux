@@ -14,6 +14,7 @@ Installation includes (nearly all are automatic):
 - 'imagemagick' (to use 'mogrify' to reformat bitmaps to compatible format for VRS)
 - Custom python GDL90 to SBS converter to make all Stratux output available to VRS
 - Custom built comprehensive database with all US and Canadian aircraft and many international aircraft
+  - You can later update the database as frequently as you like with using [E's VRS Database Updater](https://github.com/egite/E-s-VRS-Database-Updater)
 - Manual download of OpenStreet maps to zoom level 13 for VRS (and optionally for Stratux's map)
 
 The custom python program I wrote connects to Stratux's UDP port 4000 and translates the data into SBS format.  It makes those data available on TCP port 33333, which VRS then connects to.  If you are outside the US, you don't need the python program since the 1090 data are available on port 30003 of Stratux, but it doesn't cause any issues running the python program in the absence of UAT data.  However, since I only include a US OpenStreet map, you will need to assemble your own map for offline use if you're outside the US.
