@@ -9,8 +9,8 @@ Installation includes (nearly all are automatic):
   - webadmin plugin
   - tileservercache plugin
   - preconfigured config files for zero required setup
-- Silhouettes
-- Operator flags
+  - Silhouettes
+  - Operator flags
 - 'imagemagick' (to use 'mogrify' to reformat bitmaps to compatible format for VRS)
 - Custom python GDL90 to SBS converter to make all Stratux output available to VRS
 - OpenStreet maps to zoom level 13 for VRS (and optionally for Stratux's map)
