@@ -12,7 +12,7 @@ Installation includes (nearly all are automatic):
   - Silhouettes
   - Operator flags
 - 'imagemagick' (to use 'mogrify' to reformat bitmaps to compatible format for VRS)
-- Custom python GDL90 to SBS converter to make all Stratux output available to VRS
+- Custom [python GDL90 to SBS converter](https://github.com/egite/Stratux-GDL90-to-SBS-Converter-for-Virtual-Radar-Server) to make all Stratux output available to VRS
 - Custom built comprehensive database with all US and Canadian aircraft and many international aircraft
   - You can later update the database as frequently as you like using [E's VRS Database Updater](https://github.com/egite/E-s-VRS-Database-Updater)
 - Manual download of OpenStreet maps to zoom level 13 for VRS (and optionally for Stratux's map)
