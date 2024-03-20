@@ -42,6 +42,7 @@ It will take some time to download all the necessary files and packages.  When i
 - Download the 112 MB full aircraft custom database for VRS from the following link.
   - https://drive.google.com/uc?export=download&id=15ilLDsOfxqI4CL51PqMtsb5sHYRc8D_e
   - 'scp' it to the Stratux into the following folder:  '/home/pi/.local/share/VirtualRadar'
+  - You can later update this database as frequently as you like using [E's VRS Database Updater](https://github.com/egite/E-s-VRS-Database-Updater)
 - Download and unpack the 5.8 GB OpenStreet offline map for VRS from the following link.
   - https://drive.google.com/uc?export=download&id=1tI5hb0I66zj0kR8RaK4BOru31R1Cqaua
   - 'scp' it to the Stratux into the following folder:  ~pi/.local/share/VirtualRadar/TileServerCache/Leaflet'
