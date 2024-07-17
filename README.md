@@ -30,7 +30,7 @@ If you enable the "Show Traffic Source in Callsign" option in Stratux's settings
 - Enable persistent logging then reboot.
 - ssh into the Stratux (defaults are pi/raspberry).
 - Run the following from the command line:
-  - sudo wget -N https://github.com/egite/Virtual-Radar-Server-on-Stratux/releases/download/v1.0/VRS-on-Stratux.sh
+  - wget -N https://github.com/egite/Virtual-Radar-Server-on-Stratux/releases/download/v1.0/VRS-on-Stratux.sh
   - chmod 755 VRS-on-Stratux.sh
   - ./VRS-on-Stratux.sh
   
