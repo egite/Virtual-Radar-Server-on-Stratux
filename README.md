@@ -59,8 +59,7 @@ It will take some time to download all the necessary files and packages.  When i
 
 After completing those steps, reboot your Stratux.  It may take a couple of minutes for VRS to start up.  You can check for the VRS process with '<em>ps -eaf|grep mono</em>'.
 After VRS starts, go to Stratux's main status page.  You should see links for VRS at the bottom.  It may take 10-20 seconds for VRS to serve its pages (longer if VRS isn't yet running).
-The VRS icon will take you to VRS only when you are connected to Stratux via its wifi link, otherwise,
-use the text links.
+The VRS icon will take you to VRS only when you are connected to Stratux via its wifi link, otherwise, use the text links.  Those links will take you to the aircraft on the map that is defined as "ownship" within Stratux.  The script that updates the address for those links run every minute, however Stratux may not update the page for several minutes, so it may take a little bit for the links to update.
 
 The username and password for VRS' administration page is indicated in parenthesis next to the Admin link.
 Be sure to always include '127.0.0.1' on the list of Stratux static IPs in Stratux's 'Settings' page.
