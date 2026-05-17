@@ -67,3 +67,11 @@ Be sure to always include '127.0.0.1' on the list of Stratux static IPs in Strat
 When you have confirmed VRS is functioning properly, turn off persistent logging in Stratux's settings and reboot.
 If you later want to make configuration changes to VRS, you'll need to first reenable persistent logging, reboot, make changes in VRS then disable persistant logging when you're done then reboot (with persistent logging off, changes made to VRS' settings will be lost on the next Stratux reboot).  Keeping persistent logging on risks a corrupted sdcard if you shut off the Stratux without shutting it down through the webpage.
 
+## Additional Plugins to Consider
+
+I suggest adding these plugins to your VRS on Stratux deployment from this repository:  [VRS-Plugins](https://github.com/egite/VRS-Plugins)
+ - LogoMarkers
+ - RegistrationData
+ - SnapToOwnship
+ - Stratux
+ - TileServerMBTiles
