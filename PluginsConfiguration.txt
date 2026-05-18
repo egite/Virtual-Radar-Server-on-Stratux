@@ -1,0 +1,1 @@
+VirtualRadar.Plugin.TileServerCache.Options=%7b%22DataVersion%22%3a1%2c%22IsPluginEnabled%22%3atrue%2c%22IsOfflineModeEnabled%22%3afalse%2c%22CacheFolderOverride%22%3a%22%22%2c%22UseDefaultCacheFolder%22%3atrue%2c%22TileServerTimeoutSeconds%22%3a30%2c%22CacheMapTiles%22%3atrue%2c%22CacheLayerTiles%22%3atrue%7d
